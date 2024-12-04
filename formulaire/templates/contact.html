@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire de Contact</title>
+</head>
+<body>
+    <h1>Contactez-nous</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="id_name">Nom :</label>
+        {{ form.name }}
+        <label for="id_email">Email :</label>
+        {{ form.email }}
+        <label for="id_message">Message :</label>
+        {{ form.message }}
+        <label for="id_phone">Téléphone :</label>
+        {{ form.phone }}
+        <label for="id_age">Âge :</label>
+        {{ form.age }}
+        <label for="id_gender">Genre :</label>
+        {{ form.gender }}
+        <label for="id_newsletter">Newsletter :</label>
+        {{ form.newsletter }}
+        <button type="submit">Envoyer</button>
+    </form>
+    </form>
+</body>
+</html>
